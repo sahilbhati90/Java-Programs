@@ -5,7 +5,7 @@ public class practise {
     public static void main(String agrs[]){
 
 
-        int nums[] = {5,-2,3,4};
+        int nums[] = {1,2,3,4,5};
         int n = nums.length;
 
     for(int i =0; i<n; i++){

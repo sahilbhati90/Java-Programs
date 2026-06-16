@@ -1,6 +1,6 @@
 package DSA.arrays;
 
-class solution{
+class solv11{
 
     public int[] smallestAndlargest(int[] arr){
 
@@ -33,7 +33,7 @@ public class smallest_and_largest {
 
         int [] arr = {34,55,67,34,85,25,78,36};
 
-        solution obj = new solution();
+        solv11 obj = new solv11();
 
 
         int [] ans = obj.smallestAndlargest(arr);
