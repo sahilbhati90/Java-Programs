@@ -3,6 +3,7 @@ package Basics.Patterns;
 public class pattern5 {
     static void main() {
 
+        //Inverted triangle
         int n =5;
 
         for(int r =1;r<=n;r++){

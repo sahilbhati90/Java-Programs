@@ -73,5 +73,48 @@ public class Streams {
 
         System.out.println(result);
 
+        //reduce
+         List<Integer> number = List.of(1,2,3,4,5,6);
+
+        // int sum = number.stream()
+         //                .reduce((0, (c,d) -> c+d);
+       // System.out.println(sum);
+
+        //groupingby
+
+
+//        List<Employee> employees = List.of(
+//                new Employee("John", "IT", 50000),
+//                new Employee("Alice", "HR", 40000),
+//                new Employee("Bob", "IT", 60000),
+//                new Employee("David", "Finance", 70000)
+//        );
+//
+//        Map<String, List<Employee>> result =
+//                employees.stream()
+//                        .collect(Collectors.groupingBy(
+//                                Employee::getDepartment));
+//
+//        result.forEach((dept, empList) -> {
+//            System.out.println(dept);
+//            empList.forEach(e ->
+//                    System.out.println("  " + e.getName()));
+//        });
+
+        //flatmap
+
+        List<List<String>> data = List.of(
+                List.of("Java", "Spring"),
+                List.of("Docker", "Kubernetes"),
+                List.of("AWS")
+        );
+
+        List<String> results =
+                data.stream()
+                        .flatMap(List::stream)
+                        .toList();
+
+        System.out.println(results);
+
     }
 }
